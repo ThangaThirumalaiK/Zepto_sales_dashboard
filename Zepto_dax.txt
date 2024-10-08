@@ -1,0 +1,11 @@
+TOTAL SALES = sum('zepto Grocery Data'[Sales]) 
+NO OF ITEMS = COUNT('zepto Grocery Data'[Item Type]) 
+AVG SALES = AVERAGE('zepto Grocery Data'[Sales])
+AVG RATING = AVERAGE('zepto Grocery Data'[Rating])
+AVG VISIBILITY = AVERAGE('zepto Grocery Data'[Item Visibility])
+metrics = {
+    ("TOTAL SALES", NAMEOF('zepto Grocery Data'[TOTAL SALES]), 0),
+    ("AVG SALES", NAMEOF('zepto Grocery Data'[AVG SALES]), 1),
+    ("NO OF ITEMS", NAMEOF('zepto Grocery Data'[NO OF ITEMS]), 2),
+    ("AVG RATING", NAMEOF('zepto Grocery Data'[AVG RATING]), 3)
+}
